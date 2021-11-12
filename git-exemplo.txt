@@ -1,0 +1,10 @@
+Comandos do git
+git status <para ver o que eu mudei no projeto>
+git add (nome do arquvivo) <pra adicionar somente um arquvivo>
+git add . <para adicionar todos os arquvivos de uma vez>
+git commit <gerar uma versão do código>
+ex: git commit -m "Alteracão de menu"
+git push <Serve para enviar o commit para o repositório>
+git pull <Serve para baixar um ou vários commit>
+
+
