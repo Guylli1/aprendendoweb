@@ -1,0 +1,112 @@
+Cascading Style Sheet
+
+/*Comentário no css*/
+/*Serve também para desabilitar um código*/
+
+/*Seletor global*/ (*)
+
+/*Como chamar um id*/ (*) `#box #container`
+
+/*Como chamar um classe*/ (.) `.box .font`
+
+widht: /*Serve para dar a largura*/
+
+heidht: /*Serve para dar a altura*/
+
+margin: /*Espaçamento ou margem*/
+
+padding: /*Preenchimento interno de uma caixa por exemplo*/
+
+length /*Representa um valor de distância: px, em, vw*/
+
+angle /*Representa um ângulo: deg, rad, turn*/
+
+time /*Representa um tempo: s, ms*/
+
+resolution /*Representa resolucões para dispositivos: dpi*/
+
+em /*Tamanho da fonte pai*/
+rem /*Tamanho da font do elemento raiz (root/html)
+vw 1% da viewport widht*/    /*viewport é todo fundo da tela*/
+vh 1% da viewport heidht*/
+
+position /*Representa um conjunto de coordenadas 2d: -top, right, bottom, left e center*/
+
+box model /*é uma caixa retangular em 2d*/
+
+widht heidht
+content conteúdo
+border borda 
+padding Preenchimento interno
+margin Espaçamento fora da caixa
+
+display: block /*Ocupa toda linha, colocando o próximo elemnto abaixo desse*/
+/*widht e heidht são respeitados*/
+padding, margin, border irão funcionar normalmente*/
+
+display: inline /*elemento ao lado do outro*/
+widht e heidht não funcionam*/
+/*Somente valores horizontais de margin, padding e border*/
+
+ex: 
+block: `<p> <div> <section>`, todos os headings `<h1><h2>`...
+inline: `<a> <strong> <spam> <em>`
+
+margin /*é lida na seguinte ordem:*/
+margin-top margin-right margin-bottom margin-left
+ex margin: 12px (top), 16px (right), 10px (bottom), 4px (left);
+margin: 12px (top), 16px (right e left), 0 (bottom);
+margin: 8px (top e bottom), 16px (right e left);
+margin: 8px (todos);
+
+padding /*tem o mesmo sentido de margin nos posicionamentos, porém preenche a parte interna da caixa*/
+
+border style widht color 
+
+background-position 
+
+background-size /*Muda o Tamanho da imagem*/
+(contain) (cover) ou usa (porcentagem) (em) (px)
+
+background
+(repeat) (origin) (clip) (attachment) ((cover) cobre todo Tamanho da imagem)
+
+background: linear-gradient(red, yelow)
+background: radial-gradient() muda as cores de forma circular
+
+video 
+<video controls>
+src 
+
+iframe /*para puxar video pro seu site*/
+clicar em share no video depois embed e copiar o código
+
+img
+src
+alt
+title
+widht
+heidht
+
+font-family    serif sans
+font-wight     bold normal 
+font-style     italic oblique normal
+font-size      Tamanho da fonte px ou em
+
+web fonts 
+@font-face 
+
+text-decorantion    style color
+underline overline line-though
+
+text-align 
+justify center right 
+
+text-shadow 1px 1px 1px red;
+
+
+
+
+
+
+

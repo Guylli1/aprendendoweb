@@ -1,0 +1,311 @@
+Javascript é uma linguagem de programação que roda no navegador do usuário (front-end)
+e também no (back-end)
+
+sintaxe (escrever textos de uma maneira correta)
+uma boa comunicação necessita de uma boa sintaxe
+
+//comentários no Javascript uma linha
+/*  comentários com mais de uma linha */
+
+
+string é uma cadeia de caracteres
+
+NaN //not a number
+33 // inteiros
+12.5 //reais
+Infinity
+
+Boolean //tipo de dados que só tem dois valores
+true/ false
+//toda lógica de programação existe algo que é verdadeiro ou falso
+
+undefined // dado indefinido 
+
+nulo // objeto que não possui nada dentro
+//diferente de indefinido
+
+object 
+todo objeto possui propriedades / atributos
+e possui funcionalidades / metodos
+{propriedade: "valor"}
+ex 
+console.log({
+name: "Guilherme"
+idade: "27"
+andar: function(){
+  console.log('andar')
+}
+})
+
+array (vetores)
+uma lista
+agrupamento de dados 
+ex
+console.log([
+  "Leite",
+  "Ovos",
+  2,
+  3
+])
+
+ECMAScript standart(padrao) temos 9 tipos de dados: é o que padroniza a linguagem
+*data types 
+  primitive/primitive value
+  structural
+  structural primitive
+
+## Primitivos não sao objetos, não sofrem alterações
+  string 
+  number
+  Boolean
+  undefined
+  symbol
+  BigInt
+
+## Estruturais 
+*object
+  array
+  map
+  set
+  date
+  ...
+*function
+
+## Primitive Estrutural / Structural Root Primitive
+null
+
+#variáveis
+  nomes simbólicos para criar ums variável
+  atalhos de código
+  indentificadores
+    3 palavras reservadas para criar uma variável
+      *var
+      *let  
+
+      *const // const não pode mudar o seu valor durante a aplicação.
+
+      //var é global e, também local
+      //hoisting (elevação) ele puxar a var e joga lá em cima do código
+
+#Scope
+  Escopo determina a visibilidade de alguma variável no Javascript
+
++ significa a concatenação de valores 
+// console.log('o' + name + 'tem' + age + 'anos.')
+ a interpolacão acontece com as (``)
+// console.log(`O ${name} tem ${age} de idade`)
+
+//object
+objetos são acessados da seguinte forma: 
+ex:
+const person = {
+  name: 'Guilherme', 
+  age: 27,
+}
+console.log(`Meu nome é ${name} e eu tenho ${age} anos de idade.`)
+
+Já o Array é acessado da seguinte forma: 
+ex: 
+const animals = [
+  'Lyon'
+  'Monkey'
+  'Bird'
+]
+console.log(animals) // para ver todos da lista 
+console.log(animals[0]) //para ver uma só propriedade
+console.log(animals.lenght) //para ver quantos tem na lista
+
+#function //para criar uma função é simples.
+ex: function nomedafunção() {
+  console.log('olá mundo!')
+}
+ //próximo passo e rodar,chamar esta função.
+ ex: nomedafunção()
+#function serve para agrupamento de código, reutilização desse mesmo código, e dar um nome que dá significado a um bloco de código.
+//podemos declarar funções dentro de variáveis.
+
+exemeplo de função:
+const sum = function (number1, number2) {
+  total = number1 + number2
+  return total
+}
+
+let number1 = 35
+let number2 = 25
+
+console.log(`O número 1 é ${number1}`)
+console.log(`o número 2 é ${number2}`)
+console.log(`A soma é ${sum(number1, number2)}`)
+
+#funcoes construtoras 
+ex
+ function person(name) {
+  this.name = name
+}
+
+const Guilherme = new person('Guilherme')
+console.log(Guilherme)
+
+Type conversion (typecasting) vs Type coersion
+//alteração de um tipo de dado para outro tipo
+
+//tranfomandos numeros em string e string em numeros
+ex
+ let alpha = '123'
+console.log(Number(alpha))
+let delta = 123
+console.log(String(delta))
+
+let nome = 'paralelepipedo'
+console.log(nome.length)      //numero não é lido por lenght, precisa transformar em string.
+let number = 123456
+console.log(String(number).length)
+
+letras maiusculas 
+ex 
+let word = "programar é legal"
+console.log(word.toUpperCase().)
+ao contrário toLowerCase()
+
+Como separar o texto por _ 
+let phrase = 'Vamos viver e sonhar'
+let myArray = phrase.split(' ')
+console.log(myArray.join('_'))
+
+//Verificar se o texto tem uma palavra
+  let phrase = ("Eu quero viver o amor")
+console.log(phrase.includes("amor"))   true
+
+//Contar elementos do array
+  let myArray = new Array('a, b, c')
+  console.log(myArray)
+
+//tranfomando uma cadeia de caracteres em elementosde um array.
+  let word = 'manipulando'
+  console.log(Array.from(word))
+
+//manipulando arryas
+let techs = ['html', 'css', 'js']
+
+//adicionar um item no fim 
+techs.push('nodejs')
+
+//adicionar no começo
+techs.unsshift('sql')
+
+//remover do fim 
+techs.pop()
+
+//remover do começo
+techs.shift()
+
+//pegar somente alguns elementos do array 
+console.log(techs.slice(1, 1)) //primeira casa qual a posição de inicio e a segunda é a casa contada.
+
+//remover um ou mais itens em qualquer posição do array
+techs.splice(1,2) primeira casa começa pela posição e a segunda a partir da posição quantos você quer tirar.
+
+//ercontrar posição de um elemento no array
+let index = techs.indexOf('css')
+console.log(index)
+
+#new //a expressão new é para criar um novo objeto
+
+//Deletar um objeto
+ex  const cadastro = {
+      name: 'Guilherme',
+      age: 27,
+      profession: 'Dev'
+}
+  delete cadastro.age
+  console.log(cadastro)
+
+#if and else 
+ex let nota = 4.5                    
+    if (nota >= 5) {            
+    console.log('Aprovado')
+}   else {
+    console.log('Reprovado')
+}
+
+let temperature = 40
+if (temperature >= 37.5) {
+  console.log('Febre alta')
+} else if (temperature < 37.5 && temperature <= 37) {
+  console.log('Febre moderada!')
+} else console.log('Não tem febre!')
+
+
+#swith 
+ex: 
+let expression = 'a'
+
+switch (expression) {
+  case 'a':
+    //código
+    console.log('a')
+    break
+  case 'b':
+    console.log('b')
+    //código para a expressão b
+    break
+  default:
+    console.log('default')
+    break
+}
+
+#throw e try catch //A declaração throw lança uma exceção definida pelo usuário. A execução da função atual vai parar (as instruções após o throw não serão executadas), e o controle será passado para o primeiro bloco catch na pilha de chamadas. Se nenhum bloco catch existe entre as funções "chamadoras", o programa vai terminar.
+ex; 
+function sayMyName(name = '') {
+  if (name === '') {
+    throw 'Nome é obrigatório'
+  }
+
+  console.log('depois do erro')
+}
+
+try {
+  sayMyName()
+} catch (e) {
+  console.log(e)
+}
+
+console.log('Após a funçaõ de erro!')
+
+//break para a execução do loop 
+//continue pula a execução do momento
+#for 
+for(let i = 10; i > 0; i--) {
+  if(i===5) {
+    continue or break;
+    
+    console.log(i)
+  }
+}
+
+#while é tipo o if porem usada quando nao sabemos quando vai parar!
+ex 
+let i = 3168465156
+while (i > 10) {
+  i /= 35
+  console.log(i)
+}
+
+# for.. of //vai criar um loop através de alguma variação.
+ex
+ let names = ['joao', 'guilherme', 'paulo']
+for (let name of names) {
+  console.log(name)
+}
+ #for ... in vai criar um loop pegando as propriedades de um objeto 
+ex 
+let person = {
+  name: 'Jonh',
+  age: 30,
+  wheight: 88.6
+}
+
+for (let property in person) {
+  console.log(property)
+  console.log(person[property])
+}

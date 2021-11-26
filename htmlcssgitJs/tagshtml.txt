@@ -1,0 +1,169 @@
+<!--Html tags--> 
+
+<input> <!--pode ser do tipo texto...ela abre um espaço em branco para um texto!-->
+
+<disable> <!--desabilita uma tag.-->
+
+<a href=""></a> <!--serve para por um link.-->
+<!--Nele você pode colocar <h1> <p> e até mesmo imagens-->
+
+download <!--Serve de atributo para a tag <a> baixar uma imagem por exemplo-->
+
+target <!--Faz com que você abra outro link sem sair da página principal-->
+ex: <a href="http://google.com" target="_blank">Google</a>
+
+class ex:
+<div class="menu"> <!--serve para aplicar estilo css e acessar também no Js-->
+
+contenteditable ex:
+<div class="menu" contenteditable="true"> <!--Serve para modificar o conteúdo escrito no site, porém quando att ele some!
+
+data- ex: 
+<div class="menu" data-id="">
+                  data-list               <!--Muito utilizada no Js, também no css!-->
+                  data-qualquer-nome-aqui
+
+
+
+hidden ex:
+<div class="menu" hidden>    <!--Serve para esconder uma tag!-->
+
+id ex:
+    <div id= nome1>
+    <div id= nome2>         <!--Só pode ser utilizado por  uma única tag-->
+
+<style>   <!--contém informações de estilo para um documento ou uma parte do documento-->
+
+tabindex ex: 
+    div.tabindex="3"
+        conteúdo
+    </div>
+    div.tabindex="1"    <!--Serve para tabear e passar o conteúdo--> 
+    </div>
+
+    div.tabindex="2"
+        conteúdo
+    </div>
+
+title <!--Serve para definir um título-->
+
+&nbsp; <!--Serve para dar espacço na linha de um texto-->
+
+&lt; <
+&gt; >
+&amp; &
+&quot; ""
+&apos; ''
+
+<li> <!--Serve para fazer uma lista-->
+
+<ol> <!--Serve para fazer uma lista ordenada-->
+ex: 
+1
+2
+3
+4...
+
+<ul> <!--Serve para lista nao ordenada-->
+
+<bloquecode> <!-- Serve para avisar que estou citando algo de alguém-->
+
+cite <!--Serve para citar o motor de busca de alguém que está sendo citado-->
+
+<q> <!--Serve para citacões que não precisam de parágrafos ou quebras de linha-->
+
+<abbr> <!--Serve para abreviações-->
+ex: <p> Usamos <abbr title="Hypertext Markup Language">HTML</abbr> para estruturar nossos documentos web.</p>
+
+<address> <!--Serve para especificar quem fez a página-->
+ex: <address>
+        <p>Guilherme Fernandes.<br>
+        <strong>Nova Iguaçu, RJ </strong>
+    </address>
+
+Listas de descrição
+<dl>
+    <dt></dt>
+    <dd></dd>
+</dl>
+
+<pre> e <code> <!--São tags para serem utilizadas na representacão de codigos dentro do site-->
+ex: <pre>
+        <code>
+        document
+            .querySelector("body")
+        </code>
+    </pre>
+
+Elementos Genéricos
+<div>
+<span>
+ex: <div>
+        <span>Camiseta</span>
+        <span>r$ 99,00</span>
+    </div>
+
+<table> <!--Serve para visualização de dados e colunas-->
+ ex: criando tabelas...
+<table>
+    
+    <caption>Pessoas por Idade</caption>
+
+    <thead    
+        <tr>
+            <th>Nome</th>
+            <th>Idade</th>
+        </tr>
+    </thead>
+
+    <tbody>    
+        <tr>
+            <th>Guilherme</th>
+            <th>27</th>
+        </tr>
+    </tbody>
+
+    <tfoot>
+       <tr>
+            <td>Total.</td>
+            <td>2 Pessoas</td>       
+        </tr> 
+    </tfoot>
+</table>
+
+rowspan <!--Serve para ocupar quantas linhas quiser!-->
+cowspan <!--Serve para ocupar quantas colunas quiser!-->
+
+<colgroup> <!--Serve para agrupar colunas-->
+
+span <!--dar espaço dentro de uma <colgroup>-->
+
+scope = "row" <!--Escopo da linha-->
+scope = "col" <!--Escopo da coluna-->
+scope = "colgroup" <!--Escopo do Grupo de colunas-->
+
+<meta name="autor" content= "Guilherme Fernandes"/> <"--Define o autor da página--> 
+
+<meta name="description" content="Um website para iniciante em programação"/> <!--Muito importante para ser pesquisado no google-->
+
+<meta name="robots" content="index, folow"/> <!--utilizado para busca padrão no google-->
+
+<button> <!--Serve para fazer um botão-->
+
+<form>
+elemento que Define um formulário
+atributos basicos
+action method(POST e GET)
+
+<fieldset>
+disable form name 
+<legend>
+
+label
+for
+
+
+
+
+
+
